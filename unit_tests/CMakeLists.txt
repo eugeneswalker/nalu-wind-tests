@@ -1,0 +1,58 @@
+target_sources(${utest_ex_name} PRIVATE
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTest1ElemCoordCheck.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestABLWallFunction.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestBasicKokkos.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestCopyAndInterleave.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestCreateOnDevice.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestEigenDecomposition.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestElemDataRequests.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestElemSuppAlg.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestElementDescription.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestFieldUtils.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestGetDofStatus.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestHex27FaceNodeOrdering.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestHexElementPromotion.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestHexMasterElements.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestHexMasterElementsNgp.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestHexSCVDeterminant.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestIntegrationRule.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestKokkosME.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestKokkosMEBC.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestKokkosViews.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestLagrangeInterpolants.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestLocalGraphArrays.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestMasterElements.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestMetricTensor.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestMijTensor.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestMovingAverage.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestNGPMasterElements.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestNgpMesh1.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestPecletFunction.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestRealm.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestScratchViews.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestShmemAlignment.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestSideIsInElement.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestSideNodeOrdinals.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestSidePCoords.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestSimdBasic.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestSimdContAdvElem.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestSimdMomentum.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestSingleHexPromotion.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestSpinnerLidarPattern.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestSuppAlgDataSharing.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestTpetra.C
+   ${CMAKE_CURRENT_SOURCE_DIR}/UnitTestUtils.C
+)
+
+
+add_subdirectory(actuator)
+add_subdirectory(algorithms)
+add_subdirectory(kernels)
+add_subdirectory(edge_kernels)
+add_subdirectory(node_kernels)
+add_subdirectory(ngp_algorithms)
+add_subdirectory(ho_kernels)
+add_subdirectory(ngp_kernels)
+add_subdirectory(mesh_motion)
+add_subdirectory(utils)
+add_subdirectory(matrix_free)
